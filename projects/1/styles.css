@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+    max-width: 500px;
+    margin: 5px auto;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 5 0;
+  }
+  
+  label {
+    display: block;
+    width: 100%;
+    margin: 2px auto;
+  }
+  
+  input[type="submit"] {
+    background-color: lightblue;
+    border: 1px 1px;
+    border-color: white;
+    width: 40%;
+    margin: 3px auto;
+  }
+  
+  .checkboxers {
+    display: unset;
+  }

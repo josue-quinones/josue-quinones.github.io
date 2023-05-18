@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey will be used to improve the site. <em>Thanks for your cooperation</em></p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input name="name" id="name" type="text" placeholder="John Smith" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="email" id="email-label">Enter Your Email: <input name="email" id="email" type="email" placeholder="me@you.com" required/></label>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label">Enter Your Age: <input name="number" id="number" type="number" min="13" max="120" placeholder="32" /></label>
+      </fieldset>
+      <fieldset>
+        <label>How often do you use this site?</label>
+        <select id="dropdown">
+          <option value="">(select from below)</option>
+          <option value="1">Rarely</option>
+          <option value="2">Sometimes</option>
+          <option value="3">Often</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Of all the following options, which need the most improvement:</label>
+        <label class="checkboxers"><input type="checkbox" value="functionality" /> Functionailty</label>
+        <label class="checkboxers"><input type="checkbox" value="flow" /> Flow</label>
+        <label class="checkboxers"><input type="checkbox" value="style" /> Style</label>
+        <label class="checkboxers"><input type="checkbox" value="congruence" /> Congruence</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Please let us know of any more improvements:</label>
+        <textarea id="comments" rows="3" cols="40" placeholder="I think that the style can be improved by..."></textarea>
+      </fieldset>
+      <fieldset>
+        <label>Would you like to receive notifications whenever changes to the site occur?</label>
+        <label><input type="radio" name="notifications" value="true" checked /> Yes</label>
+        <label><input type="radio" name="notifications" value="false" /> No</label>
+      </fieldset>
+      <input type="submit" id="submit" method="post">
+    </form>
+  </body>
+</html>
