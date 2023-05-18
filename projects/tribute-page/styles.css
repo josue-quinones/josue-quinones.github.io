@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial;
+    background-color: rgba(127, 255, 255,.4);
+}
+
+
+#header {
+    text-align: center;
+    padding: 10px auto;
+    margin: 15px auto;
+}
+
+#title {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#subtitle {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#img-div {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#image {
+    height: auto;
+    max-width: 100%;
+    width: 250px;
+    object-fit: scale-down;
+    padding: 0;
+    margin: 0 auto;
+    display: block;   
+}
+
+#img-caption {
+    padding: 0;
+    margin: 0;
+    font-size: .8rem;
+}
+
+#tribute-info {
+    text-align: justify;
+    background-color: rgba(127, 227, 255,.75);;
+}
+
+#prayer {
+    text-align: center;
+}
+
+#prayer h4 {
+    margin-bottom: -8px;
+}
+
+#footer {
+    font-size: .6rem;
+}
+
+a {
+    color: black;
+}

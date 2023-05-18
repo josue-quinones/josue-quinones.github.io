@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>C# Beginner Documentation</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Beginner C# Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a>
+                <li><a class="nav-link" href="#Main_Method">Main Method</a></li>
+                <li><a class="nav-link" href="#Keywords">Keywords</a></li>
+                <li><a class="nav-link" href="#Example_1:_Variables">Example 1: Variables</a></li>
+                <li><a class="nav-link" href="#Example_2:_Strings">Example 2: Strings</a></li>
+                <li><a class="nav-link" href="#Example_3:_Classes">Example 3: Classes</a></li>
+            </ul>            
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>This guide will walk through some simple C# programs to acquaint the user with the syntax. All the information of this guide comes from <em>Microsoft&reg Documentation</em>, found <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">here</a>.</p>
+            </section>
+            <section class="main-section" id="Main_Method">
+                <header>Main Method</header>
+                <p>The main component of a C# program is the <strong>Main</strong> method. It is the entry point of a C# application, and so, when the application is started, the <strong>Main</strong> method is the first method that is invoked. The following simple code will compile and run C# code.</p>
+                <pre><code>
+                class HelloWorld
+                {
+                    static void Main(string[] args)
+                    {
+                        Console.WriteLine("Hello World");
+                    }
+                }
+                </code></pre>
+            </section>
+            <section class="main-section" id="Keywords">
+                <header>Keywords</header>
+                <p>These are some of the common keywords that will be used:</p>
+                <ul>
+                    <li><code>class</code></li>
+                    <li><code>static</code></li>
+                    <li><code>void</code></li>
+                    <li><code>int</code></li>
+                    <li><code>string</code></li>
+                    <li><code>var</code></li>
+                    <li><code>new</code></li>
+                </ul>
+            </section>
+            <section class="main-section" id="Example_1:_Variables">
+                <header>Example 1: Variables</header>
+                <p class="example-caption">This example introduces variable typing.</p>
+                <p>Variables can be typed explicitly...</p>
+                <code>int a = 10;</code>
+                <p>... or implicitly</p>
+                <code>var b = 10;</code>
+            </section>
+            <section class="main-section" id="Example_2:_Strings">
+                <header>Example 2: Strings</header>
+                <p class="example-caption">This example introduces strings.</p>
+                <p>String objects in C# are immutable. A new string is always returned. Creating them is pretty simple.</p>
+                <code>string s1 = "A string is more ";</code>
+                <p></p>
+                <code>string s2 = "than the sum of its chars.";</code>
+                <p></p>
+                <code>s1 += s2; // s1 contains: "A string is more than the sum of its chars."</code>
+            </section>
+            <section class="main-section" id="Example_3:_Classes">
+                <header>Example 3: Classes</header>
+                <p class="example-caption">This example introduces classes.</p>
+                <p>Classes in C# are reference types. They hold reference to the address of the object on the managed heap. Instances of classes are created using the new operator. The following code shows a simple Person class, with fields and sample declaration.</p>
+                <pre><code>
+                public class Person
+                {
+                    public string Name { get; set; }
+                    public int Age { get; set; }
+                    public Person(string name, int age)
+                    {
+                        Name = name;
+                        Age = age;
+                    }
+                }
+
+                class Program
+                {
+                    static void Main()
+                    {
+                        Person p1 = new Person("Teen", 17);
+                        var p2 = new Person("Elder", 71)
+                    }
+                }
+                </code></pre>
+            </section>
+            <footer>
+                <p>All information is taken from <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Microsoft's C# Documentation</a></p>
+            </footer>
+        </main>
+    </body>
+</html>

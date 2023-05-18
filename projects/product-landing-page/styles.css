@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    background-color: darkred;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: yellow;
+    justify-items: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#PageTitle {
+    width: 40%;
+    height: 100%;    
+}
+
+#header-img {
+    height: 100%;
+    width: 20%;
+}
+
+nav {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+nav > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > p > a:hover {
+    background-color: orange;
+    color: grey;
+}
+
+/* Footer */
+main, footer {
+    text-align: center;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: yellow;
+}
+
+/* Main */
+
+#Subscribe, #Features, #Introduction, #Pricing {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+main > section > h2 {
+    color:white;
+    font-size: 3rem;
+}
+
+/* Subscribe */
+#Subscribe > p {
+    color:lightgray;
+    margin: 5px;   
+}
+
+/* Features */
+.boxes {
+    display: flex;
+    font-size: 2rem;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.box {
+    height: auto;
+    width: 30%;
+    border: 2px solid black;
+    color: antiquewhite;
+}
+
+/* Pricing */
+#Pricing > section > img {
+    max-width: 50%;
+    padding: 4px;
+    margin: 3px;
+}
+
+.pricing {
+    padding: 10px;
+    margin: 5px;
+    color: antiquewhite;
+}
+
+/* Lg Screen */
+@media (min-width: 1050px) {
+    #video {
+        width: 885;
+        height: 498;
+    }
+}
+/* Md Screen */
+@media (max-width: 1050px) {
+    .md-screen {
+        overflow: hidden;
+        font-size: 0px;
+    }
+}
+/* Sm Screen */
+@media (max-width: 800px) {
+    .sm-screen {
+        overflow: hidden;
+        font-size: 0px;
+    }
+    .box {
+        font-size: 1rem;
+    }
+}
