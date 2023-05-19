@@ -64,7 +64,7 @@ body {
     color: var(--color-theme-2);
 }
 
-#projects-section h3 {
+#projects h3 {
     padding-top: 30px;
     text-align: center;
     font-size: 2rem;
