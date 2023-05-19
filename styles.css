@@ -64,14 +64,14 @@ body {
     color: var(--color-theme-2);
 }
 
-#projects h3 {
+#projects-section h3 {
     padding-top: 30px;
     text-align: center;
     font-size: 2rem;
     color: var(--color-theme-4);
 }
 
-.project-div {
+.projects-div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -89,7 +89,7 @@ img {
     border-radius: 25%;
 }
 
-.project-title {
+.project-title, .project-tile {
     color: var(--color-theme-3);
     text-align: center;
 }
@@ -98,14 +98,13 @@ a {
     text-decoration: none;
 }
 
-.profile-link p a {
+.profile-link {
     color:var(--color-theme-3)
 }
 
 #profile-links {
     text-align: center;
     width: 100%;
-    
 }
 
 #profile-links h6 {
